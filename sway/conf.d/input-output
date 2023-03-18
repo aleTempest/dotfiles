@@ -1,0 +1,26 @@
+# Wallpaper
+output * bg ~/Pictures/w/gwen.jpg fill
+
+# Setup para el monitor de la laptop y mi monitor
+## Posición sacada de wdisplays
+output HDMI-A-1 resolution 1920x1080 position 0,0
+output eDP-1 resolution 1366x768 position 1920 525
+
+# Bloquear la pantalla
+exec swayidle -w \
+     timeout 600 'swaylock -f -c 000000' \
+     timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+     before-sleep 'swaylock -f -c 000000'
+
+# Configuración del teclado
+input * {
+    xkb_layout "latam"
+		xkb_options caps:escape
+}
+
+# Configuración del touchpad
+input type:touchpad {
+    tap enabled
+    natural_scroll enabled
+}
+

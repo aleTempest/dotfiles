@@ -1,0 +1,7 @@
+font pango:CaskaydiaCove Nerd Font Medium 11
+
+include ~/.config/sway/config.d/*
+include ~/.config/sway/conf.d/bindings
+include ~/.config/sway/conf.d/startup
+include ~/.config/sway/conf.d/input-output
+include ~/.config/sway/conf.d/theme

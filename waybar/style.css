@@ -1,0 +1,39 @@
+* {
+	font-family: CaskaydiaCove Nerd Font;
+}
+
+.modules-right, .modules-left, .modules-center {
+  margin-top: 6px;
+	margin-bottom: 3px;
+	color: white;
+}
+
+.modules-right {
+  margin-right: 10px;
+}
+
+.modules-left {
+  margin-left: 5px;
+}
+
+window#waybar {
+  background: black;
+}
+
+.modules-right * {
+	margin-left: 20px;
+}
+
+#workspaces button {
+	padding: 0;
+	border-radius: 0;
+}
+
+#workspaces button.focused {
+	background: rgba(255,255,255, 0.6);
+	color: black;
+}
+
+#mode {
+  margin-left: 30px;
+}
