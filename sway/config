@@ -5,3 +5,4 @@ include ~/.config/sway/conf.d/bindings
 include ~/.config/sway/conf.d/startup
 include ~/.config/sway/conf.d/input-output
 include ~/.config/sway/conf.d/theme
+include ~/.config/sway/conf.d/autostart

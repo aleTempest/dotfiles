@@ -17,13 +17,20 @@ set $ws8 workspace number 8
 set $ws9 workspace number 9
 set $ws10 workspace number 10
 
+workspace 1 output HDMI-A-1
+workspace 2 output HDMI-A-1
+workspace 3 output HDMI-A-1
+workspace 4 output HDMI-A-1
+workspace 5 output HDMI-A-1
+
 # Comandos
 set $term kitty
 set $menu rofi -show drun
 
 # Custom
 		# Screenshots hasta arreglar el problema de flameshot
-		bindsym $mod+Shift+s exec grim -g "$(slurp -d)" - | wl-copy 
+		# bindsym $mod+Shift+s exec grim -g "$(slurp -d)" - | wl-copy 
+		bindsym $mod+Shift+s exec /home/ela/.config/sway/sway-interactive-screenshot
 
 		# Lock the screen
 		bindsym $mod+Shift+q exec swaylock -f -c 000000

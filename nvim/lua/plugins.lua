@@ -1,7 +1,27 @@
 return require('packer').startup(function(use)
+	use 'morhetz/gruvbox'
 	use 'nvim-lua/plenary.nvim'
 	use 'wbthomason/packer.nvim'
 	use 'tanvirtin/monokai.nvim'
 	use 'nvim-lualine/lualine.nvim'
 	use 'nvim-telescope/telescope.nvim'
+	-- use 'neoclide/coc.nvim'
+	use 'tpope/vim-commentary'
+	use 'tpope/vim-surround'
+	use 'neovim/nvim-lspconfig'
+	use 'williamboman/mason.nvim'
+	use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+	use {'nvim-telescope/telescope-dap.nvim'}
+	use 'Shatur/neovim-tasks'
+	use 'nvim-treesitter/nvim-treesitter'
+	use 'rust-lang/rust.vim'
+	use 'simrat39/rust-tools.nvim'
+	use 'hrsh7th/nvim-cmp' 
+	use 'hrsh7th/cmp-nvim-lsp'
+	use 'hrsh7th/cmp-nvim-lua'
+	use 'hrsh7th/cmp-nvim-lsp-signature-help'
+	use 'hrsh7th/cmp-vsnip'                             
+	use 'hrsh7th/cmp-path'                              
+	use 'hrsh7th/cmp-buffer'                            
+	use 'hrsh7th/vim-vsnip' 
 end)

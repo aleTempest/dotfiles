@@ -1,0 +1,7 @@
+for_window [class="Hewo"] floating enable
+for_window [app_id="pcmanfm"] floating enable
+for_window [app_id="pavucontrol"] floating enable
+for_window [class="Google-chrome-unstable" title="^Picture-in-picture"] \
+    floating enable, move position 877 450, sticky enable
+exec swaync
+exec /usr/libexec/polkit-gnome-authentication-agent-1
